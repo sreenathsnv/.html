@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>insta-sample</title>
     <link rel="stylesheet" href="intsa.css" type ="text/css">
+    <script src="https://kit.fontawesome.com/590484b268.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <selector class="container">
        <div class="nav">
             <div class="dp"></div>
             <p class="username">im_web.designer</p>
-            <div class="menu"><img src ="Resource\ellipsis-v-solid.svg"></div>
+            <div id="menu" onclick="Menu_list(op)"><i class="fas fa-ellipsis-v"></i></div>
             <div class="op">
-                <ul>
+                <ul id = "op">
                     <li><a>View profle</a></li>
                     <li><a>Share profile</a></li>
                     <li><a>Report</a></li>
@@ -30,10 +31,10 @@
         </div>
        
         <div class="response">
-            <img src="Resource\heart-regular.svg" alt="">
-            <img src="Resource\comment-regular.svg" alt="">
-            <img src="Resource\paper-plane-regular.svg" alt="">
-            <img src="Resource\bookmark-regular.svg" alt="">
+            <i class="far fa-heart"></i>
+            <i class="far fa-comment"></i>
+            <i class="far fa-paper-plane"></i>
+            <i class="far fa-bookmark"></i>
        
         </div>
        
@@ -47,5 +48,7 @@
             <p id="time">15 sec ago</p>
         </div>
    </selector> 
+
+   <script src="insta.js"  ></script>
 </body>
 </html>

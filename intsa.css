@@ -58,15 +58,15 @@ body{
     font-size:1.7vh;
 
 }
-.nav .menu{
+.nav #menu{
     z-index:4;
     position:absolute;
     right:2.5vw;
     top:3.5vh;
 }
-.nav .menu img{
+.nav #menu i{
     width:.3em;
-    color:rgb(255, 255, 255);
+    color:rgb(8, 8, 8);
 }
 
 .nav .op ul{
@@ -81,16 +81,22 @@ body{
     background: white;
     padding:0;
     box-shadow: 1vh 1vh 4em -2em rgb(82, 80, 80);
-    transition: visibilty 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s;
+    transition: 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s;
     visibility:hidden;
 }
 .nav .op ul li{
-    transition: visibilty 3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
     padding:.4vh .1vh .3vh 1vh ;
     list-style-type: none;
  
 
 
+}
+.nav .op ul li:hover{
+    border-radius: 10px;
+    padding:.4vh .1vh .3vh 1vh ;
+    list-style-type: none;
+    background: rgba(119, 240, 220, 0.726);
+    
 }
 .nav .op ul li a{
     
@@ -101,10 +107,10 @@ body{
     cursor:pointer;
 
 }
-.nav .menu:hover ~ .op ul{
+/* .nav .menu:hover ~ .op ul{
 
     visibility: visible;
-}
+} */
 .post{
     box-sizing: border-box;
     display:flex;
@@ -133,36 +139,39 @@ body{
     height:5.9vh;
 
 }
-.response img:nth-child(1){
+
+.response i:nth-child(1){
+    font-size: 2.5vh;
+    color:black;
     position:absolute;
     left:1vh;
     margin:1vh 3vh 1vh 0vh;
-    width:1.2em;
-    height:1.2em;
+    
 }
-.response img:nth-child(2){
+.response i:nth-child(1):hover{
+    color: red;
+
+}
+.response i:nth-child(2){
     position:absolute;
     left:7.5vh;
     margin:1vh 3vh 1vh 0vh;
-    width:1.2em;
-    height:1.2em;
-    color:rgb(172, 93, 93);
+    font-size: 2.5vh;
+    color:black;
 }
-.response img:nth-child(3){
+.response i:nth-child(3){
     position:absolute;
     left:13.5vh;
     margin:1vh 3vh 1vh 0vh;
-    width:1.2em;
-    height:1.2em;
-    color:rgb(172, 93, 93);
+    font-size: 2.5vh;
+    color:black;
 }
-.response img:nth-child(4){
+.response i:nth-child(4){
     position:absolute;
     right:2.5vh;
     margin:1vh;
-    width:1.2em;
-    height:1.2em;
-    color:rgb(172, 93, 93);
+    font-size: 2.5vh;
+    color:black;
 }
 .description{
     margin-top:-20px;
