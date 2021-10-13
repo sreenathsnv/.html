@@ -1,8 +1,13 @@
-let op = document.querySelector("#op");
+let op = document.querySelector("#oplis");
 
 function Menu_list(element){
     console.log("working")
-    element.style.visibility = "visible"
+    if(element.style.visibility != "visible"){
+        element.style.visibility = "visible"
+    }
+    else{
+        element.style.visibility = "hidden"
+    }
 }
 function Menu_list_hide(element){
     if(element.style.visibility == "visible"){
