@@ -59,6 +59,7 @@ body{
 
 }
 .nav #menu{
+    outline:none;
     background:transparent;
     border:none;
     z-index:4;
