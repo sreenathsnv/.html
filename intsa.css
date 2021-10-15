@@ -91,7 +91,6 @@ body{
     background: white;
     padding:0;
     box-shadow: 1vh 1vh 4em -2em rgb(82, 80, 80);
-    transition:  2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s;
     visibility:hidden;
 }
 .nav .op #oplis li{
@@ -156,12 +155,13 @@ body{
     position:absolute;
     left:1vh;
     margin:1vh 3vh 1vh 0vh;
+    transition: font-size 0s linear;
     
 }
-.response i:nth-child(1):hover{
+/* .response i:nth-child(1):hover{
     color: red;
 
-}
+} */
 .response i:nth-child(2){
     position:absolute;
     left:7.5vh;
